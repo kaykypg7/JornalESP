@@ -1,0 +1,41 @@
+footer {
+    /* margin-top: 15%; */
+    padding: 1em;
+    
+    background-color: rgb(104, 0, 0);
+    color: white;
+    display: grid;
+
+    text-align: center;
+    justify-content: center;
+
+    align-items: center;
+
+
+
+    min-height: 30vh;
+}
+
+/* Define o main para crescer e ocupar o espaço disponível */
+main {
+    flex: 1;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+li {
+    /* padding: 10%; */
+    /* background-color: blue;  Cor definida para testes*/
+    width: auto;
+    margin: 100px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,49 @@
+
+section{
+    background-color: black;
+    height: -webkit-fill-available;
+    max-height: 700px;
+    width: auto;
+}
+
+.container{
+    height: -webkit-fill-available;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto {
+    /* width: 30%;
+    display: inline-block;
+    height: 100%;
+    margin: auto;
+    padding-left: 5%; */
+    color: white;
+    margin: auto;
+    text-align: center;
+    text-align: justify;
+    padding: 30px;
+}
+
+span {
+    margin-top: 20px;
+    font-size: 70px;
+    color: white;
+}
+
+p{
+    text-align: justify;
+    /* font-size: 2vw; */
+    color: white;
+    height: 30%;
+}
+
+.logo{
+    padding-right: 15%;
+    margin: auto;
+    text-align: center;
+    text-align: justify;
+    padding: 30px;
+}

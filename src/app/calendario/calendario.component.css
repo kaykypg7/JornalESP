@@ -1,0 +1,128 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    background-color: #0d0c0c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendar {
+    width: 100%;
+    max-width: 600px;
+    padding: 30px 20px;
+    border-radius: 10px;
+    background-color: #F8F8FF;
+}
+
+.calendar .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+.calendar .header .month {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 600;
+    color: #800;
+}
+
+.calendar .header .btns {
+    display: flex;
+    gap: 10px;
+}
+
+.calendar .header .btns .btn {
+    width: 50px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #800;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.calendar .header .btns .btn:hover {
+    background-color: #b00303;
+    transform: scale(1.1);
+}
+
+.weekdays {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.weekdays .day {
+    width: calc(100% / 7 - 10px);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.days {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.days .day {
+    width: calc(100% / 7 - 10px);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    background-color: white;
+    transition: all 0.3s;
+}
+
+.days .day:hover {
+    color: white;
+    background-color: #b00303;
+    transform: scale(1.1);
+}
+
+.days .day.today {
+    color: white;
+    background-color: #800;
+}
+
+.days .day.prev,
+.days .day.next {
+    color: #A9A9A9;
+}
+
+.days .day.next:hover {
+    color: white;
+    background-color: #A9A9A9;
+}
+
+.days .day.prev:hover {
+    color: white;
+    background-color: #A9A9A9;
+}

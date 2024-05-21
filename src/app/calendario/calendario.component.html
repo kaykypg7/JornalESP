@@ -1,0 +1,31 @@
+<section>
+    <div class="container">
+        <div class="calendar">
+            <div class="header">
+
+                <div class="month"> {{ month[currentMonth] }} {{ currentYear }}</div>
+
+                <div class="btns">
+
+                    <div class="btn .today-btn" (click)="today_click()"> <i class="fas fa-calendar-day"></i> </div>
+
+                    <!-- Retornar ao mês anterior -->
+                    <div class="btn .prev-btn" (click)="previousMonth()"><i class="fas fa-chevron-left"></i></div>
+
+                    <!-- Seguir ao próximo mês -->
+                    <div class="btn .next-btn" (click)="nextMonth()"><i class="fas fa-chevron-right"></i></div>
+
+                </div>
+
+            </div>
+
+            <div class="days">
+
+                <!-- <div class="day" *ngFor="let day of daysInMonth">{{ day }}</div> -->
+                <div class="day" *ngFor="let day of daysInMonth let i = index" [ngClass]="getDayClass(i)">{{ day }}
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
