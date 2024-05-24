@@ -141,6 +141,9 @@ a:hover {
     display: none;
 }
 
+
+
+/* Para telas Maiores que 768 até 992 Pixels */
 @media screen and (min-width: 768px) and (max-width: 992px) {
 
     .tl{
@@ -231,6 +234,7 @@ a:hover {
     }
 }
 
+/* Para Telas Maiores que 993 Pixels */
 @media screen and (min-width: 993px ) {
     
     .tl{

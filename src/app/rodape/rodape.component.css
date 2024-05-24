@@ -11,8 +11,6 @@ footer {
 
     align-items: center;
 
-
-
     min-height: 30vh;
 }
 
@@ -38,4 +36,22 @@ li {
 a{
     text-decoration: none;
     color: white;
+}
+
+@media screen and (max-width: 450px) and (orientation:portrait){
+    section{
+        display: flex;
+    }
+
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul{
+        display: inline;
+        margin: 5px;
+        padding: 5px;
+    }
 }

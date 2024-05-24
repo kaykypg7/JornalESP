@@ -1,17 +1,20 @@
-
-section{
+section {
     background-color: black;
     height: -webkit-fill-available;
     max-height: 700px;
     width: auto;
 }
 
-.container{
+.container {
     height: -webkit-fill-available;
     background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.inicio {
+    display: flex;
 }
 
 .texto {
@@ -33,17 +36,66 @@ span {
     color: white;
 }
 
-p{
+p {
     text-align: justify;
     /* font-size: 2vw; */
     color: white;
     height: 30%;
 }
 
-.logo{
+.logo {
     padding-right: 15%;
     margin: auto;
     text-align: center;
     text-align: justify;
     padding: 30px;
+}
+
+@media screen and (max-width: 450px) and (orientation:portrait) {
+
+    section {
+        height: 915px;
+        width: auto;
+    }
+
+    .container {
+        height: 700px;
+    }
+
+    .texto {
+        display: flow;
+        
+    }
+
+    .logo {
+        display: flex;
+        text-align: justify;
+        justify-content: center;
+    }
+
+    img {
+        width: 350px;
+    }
+
+    .inicio {
+        display: inline-block;
+    }
+}
+
+@media screen and (max-height: 450px) and (orientation:landscape){
+    
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .inicio{
+        margin-top: -75px;
+    }
+    .texto{
+        padding: 5px;
+    }
+    img{
+        width: 300px;
+    }
 }
