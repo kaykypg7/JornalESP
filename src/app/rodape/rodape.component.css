@@ -1,22 +1,24 @@
 footer {
     /* margin-top: 15%; */
-    padding: 1em;
-    
+    max-width: 100%;
     background-color: rgb(104, 0, 0);
     color: white;
-    display: grid;
-
     text-align: center;
     justify-content: center;
-
     align-items: center;
-
     min-height: 30vh;
+    display: flex;
+   
 }
 
 /* Define o main para crescer e ocupar o espaço disponível */
 main {
     flex: 1;
+}
+
+/* centralizando conteiner */
+.conteiner{
+    margin: auto;
 }
 
 ul {
@@ -30,7 +32,7 @@ li {
     /* padding: 10%; */
     /* background-color: blue;  Cor definida para testes*/
     width: auto;
-    margin: 100px;
+    margin:50px;   /*diminui, pois estava ultrapassando o footer*/
 }
 
 a{
@@ -38,10 +40,8 @@ a{
     color: white;
 }
 
-@media screen and (max-width: 450px) and (orientation:portrait){
-    section{
-        display: flex;
-    }
+@media screen and (min-width: 0px) and (max-width: 600px) and (orientation:portrait){
+    
 
     .container{
         display: flex;
