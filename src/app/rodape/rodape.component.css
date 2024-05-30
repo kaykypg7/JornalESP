@@ -40,6 +40,17 @@ a{
     color: white;
 }
 
+a:hover{
+    color: #555;
+    transition: 0.700s;
+}
+
+.copyright{
+    background-color: #555;
+    color: #fff;
+    font-size: 10px;
+}
+
 @media screen and (min-width: 0px) and (max-width: 600px) and (orientation:portrait){
     
 
