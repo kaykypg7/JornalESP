@@ -7,6 +7,7 @@ import { NewsComponent } from "./news/news.component";
 import { CalendarioComponent } from './calendario/calendario.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
+import { SobreComponent } from './sobre/sobre.component';
 
 @Component({
     selector: 'app-root',
@@ -20,7 +21,8 @@ import { CommonModule } from '@angular/common';
       RodapeComponent, 
       InicioComponent, 
       NewsComponent, 
-      CalendarioComponent
+      CalendarioComponent,
+      SobreComponent
     ]
 })
 
